@@ -15,16 +15,16 @@ function isCookie(name){
     return null;
 }
 
-if(isCookie("fontValue")){
-    let fontValue=isCookie("fontValue")
+if(isCookie("fontsize")){
+    let fontValue=isCookie("fontsize")
     // let text=document.getElementsByTagName("p");
     // for(let i=0;i<text.length;i++){
     //     text[i].style.fontSize=`${fontValue}`
     // }
    document.body.style.fontSize=`${fontValue}`
 }
-if(isCookie("fontColor")){
-    let fontColorValue=isCookie("fontColor");
+if(isCookie("fontcolor")){
+    let fontColorValue=isCookie("fontcolor");
     // console.log(fontColorValue)
     // let text=document.getElementsByTagName("p");
     // for(let i=0;i<text.length;i++){
@@ -41,8 +41,8 @@ function setFontSizeColor(event){
     console.log(fontColor.value)
     let fontSizeValue=fontSize.value+"px";
     let fontColorValue=fontColor.value;
-    document.cookie=`fontValue=${fontSizeValue}`
-    document.cookie=`fontColor=${fontColorValue}`
+    document.cookie=`fontsize=${fontSizeValue}`
+    document.cookie=`fontcolor=${fontColorValue}`
 }
 
 saveButton.addEventListener("click",setFontSizeColor)
