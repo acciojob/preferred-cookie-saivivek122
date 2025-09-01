@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let fontSize=document.getElementById("fontsize");
 let fontColor=document.getElementById("fontcolor");
 let saveButton=document.getElementById("save");
@@ -18,18 +17,20 @@ function isCookie(name){
 
 if(isCookie("fontValue")){
     let fontValue=isCookie("fontValue")
-    let text=document.getElementsByTagName("p");
-    for(let i=0;i<text.length;i++){
-        text[i].style.fontSize=`${fontValue}`
-    }
+    // let text=document.getElementsByTagName("p");
+    // for(let i=0;i<text.length;i++){
+    //     text[i].style.fontSize=`${fontValue}`
+    // }
+   document.body.style.fontSize=`${fontValue}`
 }
 if(isCookie("fontColor")){
     let fontColorValue=isCookie("fontColor");
-    console.log(fontColorValue)
-    let text=document.getElementsByTagName("p");
-    for(let i=0;i<text.length;i++){
-        text[i].style.color=`${fontColorValue}`
-    }
+    // console.log(fontColorValue)
+    // let text=document.getElementsByTagName("p");
+    // for(let i=0;i<text.length;i++){
+    //     text[i].style.color=`${fontColorValue}`
+    // }
+   document.body.style.color=`${fontColorValue}`
 
 }
 
